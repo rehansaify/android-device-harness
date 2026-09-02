@@ -1,6 +1,7 @@
 """Unit tests for the command-line interface."""
 
 import json
+from typing import Any
 from unittest.mock import MagicMock, patch
 
 import pytest
