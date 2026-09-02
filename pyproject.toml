@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "android-device-harness"
+version = "0.1.0"
+description = "Automated Android device test execution and health-recovery framework."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.10.0",
+    "black>=23.7.0",
+    "isort>=5.12.0",
+    "mypy>=1.4.1",
+]
+
+[project.scripts]
+android-harness = "harness.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["harness"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --cov=harness --cov-report=term-missing"
+testpaths = [
+    "tests",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true

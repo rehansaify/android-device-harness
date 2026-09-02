@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+ENV/
+
+# Coverage / testing
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+*.egg
+MANIFEST
+
+# Android / Gradle
+.gradle/
+**/build/
+*.apk
+*.aab
+local.properties
+
+# IDEs
+.idea/
+.vscode/
+
+# Environment / secrets
+.env
+.envrc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+tempCodeRunnerFile.py
+
+# Local Android/Java toolchains
+gradle_bin/
+jdk/
+*.zip
+
+/cmdline-tools/
+
+
+# Android build outputs
+**/build/
+**/.gradle/
+*.apk
+local.properties

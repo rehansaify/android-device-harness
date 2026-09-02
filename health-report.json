@@ -1,0 +1,66 @@
+{
+  "serial": "ZF6526VZ6C",
+  "summary": {
+    "passed": 0,
+    "failed": 0,
+    "total": 0,
+    "duration_ms": 0
+  },
+  "tests": [],
+  "health": {
+    "serial": "ZF6526VZ6C",
+    "results": [
+      {
+        "check_name": "adb_connectivity",
+        "is_healthy": true,
+        "duration_ms": 31,
+        "message": "ADB connected. State: device",
+        "details": null
+      },
+      {
+        "check_name": "device_state",
+        "is_healthy": true,
+        "duration_ms": 520,
+        "message": "Device is online",
+        "details": null
+      },
+      {
+        "check_name": "boot_completed",
+        "is_healthy": true,
+        "duration_ms": 96,
+        "message": "Boot completed",
+        "details": null
+      },
+      {
+        "check_name": "package_manager",
+        "is_healthy": true,
+        "duration_ms": 149,
+        "message": "Package manager is responsive",
+        "details": null
+      },
+      {
+        "check_name": "system_server",
+        "is_healthy": true,
+        "duration_ms": 109,
+        "message": "system_server running with PID 2065",
+        "details": null
+      },
+      {
+        "check_name": "ui_responsiveness",
+        "is_healthy": true,
+        "duration_ms": 112,
+        "message": "UI WindowManager service is responsive",
+        "details": null
+      },
+      {
+        "check_name": "network_connectivity",
+        "is_healthy": true,
+        "duration_ms": 174,
+        "message": "Network connectivity verified",
+        "details": "PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=76.8 ms\n\n--- 8.8.8.8 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 76.843/76.843/76.843/0.000 ms"
+      }
+    ],
+    "total_duration_ms": 1194
+  },
+  "recovery": null
+}
