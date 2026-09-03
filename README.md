@@ -69,7 +69,7 @@ android-device-harness/
 Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/rehansaify/android-device-harness
 cd android-device-harness
 ```
 
@@ -112,7 +112,7 @@ Example:
 ```text
 Android Devices
 ------------------------------------
-[OK] ZF6526VZ6C
+[OK] <Serial No.>
     State: online
 ```
 
@@ -125,13 +125,13 @@ android-harness devices --output json
 ### Check Device Health
 
 ```powershell
-android-harness health --serial ZF6526VZ6C
+android-harness health --serial <Serial No.>
 ```
 
 JSON reports can be written to a file:
 
 ```powershell
-android-harness health --serial ZF6526VZ6C --output json --report health-report.json
+android-harness health --serial <Serial No.> --output json --report health-report.json
 ```
 
 The health subsystem checks:
@@ -147,7 +147,7 @@ The health subsystem checks:
 ### Recover a Device
 
 ```powershell
-android-harness recover --serial ZF6526VZ6C
+android-harness recover --serial <Serial No.>
 ```
 
 The recovery subsystem can attempt to restore an unhealthy or unresponsive device to an operational state.
@@ -344,14 +344,14 @@ Example structure:
 
 ```json
 {
-  "serial": "ZF6526VZ6C",
+  "serial": "<Serial No.>",
   "summary": {
     "passed": 0,
     "failed": 0,
     "total": 0
   },
   "health": {
-    "serial": "ZF6526VZ6C",
+    "serial": "<Serial No.>",
     "results": [
       {
         "check_name": "adb_connectivity",
